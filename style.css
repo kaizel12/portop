@@ -38,10 +38,12 @@ body {
   background: linear-gradient(to bottom, #5000ca, #3d0b9a);
   padding: 50px 0;
   text-align: center;
+  position: relative;
 }
 
 .jumbotron img {
   border: 5px solid #fff;
+  margin-top: 20px;
 }
 
 .typewriter {
@@ -83,6 +85,10 @@ body {
   margin-bottom: 30px;
 }
 
+#About p {
+  font-size: 1.1rem;
+}
+
 /* Project Section Styles */
 #Project {
   padding: 60px 0;
@@ -93,11 +99,17 @@ body {
   margin-bottom: 30px;
 }
 
+.card-deck {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card {
   border: none;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
+  background-color: #fff;
 }
 
 .card-img-top {
@@ -106,8 +118,7 @@ body {
 }
 
 .card-body {
-  background-color: #fff;
-  color: #000;
+  padding: 15px;
 }
 
 /* Contact Section Styles */
@@ -125,10 +136,10 @@ footer {
   background-color: #5000ca;
   color: #fff;
   padding: 20px 0;
+  text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
 }
 
 /* Responsive Styles */
@@ -143,5 +154,9 @@ footer {
 
   .card-img-top {
     height: 150px;
+  }
+
+  .card-deck {
+    flex-direction: column;
   }
 }
