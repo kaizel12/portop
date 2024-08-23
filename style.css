@@ -1,162 +1,136 @@
-/* General Styles */
+/* General Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  color: #fff;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #f8f9fa;
+    background-color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #5000ca;
+    margin-bottom: 2rem;
 }
 
 .navbar-brand {
-  font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.nav-link {
-  color: #fff !important;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #d1c4e9 !important;
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 1rem;
 }
 
 .navbar-toggler {
-  border: none;
+    border-color: #fff;
 }
 
 .navbar-toggler-icon {
-  background-color: #fff;
+    background-image: none;
+    color: #fff;
 }
 
 /* Jumbotron Styles */
 .jumbotron {
-  background: linear-gradient(to bottom, #5000ca, #3d0b9a);
-  padding: 50px 0;
-  text-align: center;
-  position: relative;
+    background: linear-gradient(to right, #6f42c1, #6610f2);
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
 }
 
 .jumbotron img {
-  border: 5px solid #fff;
-  margin-top: 20px;
-}
-
-.typewriter {
-  display: inline-block;
-  color: #fff;
-  font-size: 24px;
+    border: 5px solid #fff;
 }
 
 .typewriter h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    animation: typing 3.5s steps(30, end), blink .75s step-end infinite;
 }
 
 .typewriter p {
-  font-size: 1.25rem;
+    color: #fff;
+    font-size: 1.2rem;
 }
 
-/* Decorative SVG Styles */
-.bg-wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  z-index: -1;
+/* Keyframes for Typewriter Effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-/* About Section Styles */
-#About {
-  background-color: #5000ca;
-  padding: 60px 0;
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
 }
 
-#About .container {
-  max-width: 900px;
+/* Section Styles */
+section {
+    padding: 3rem 0;
 }
 
-#About h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-#About p {
-  font-size: 1.1rem;
-}
-
-/* Project Section Styles */
-#Project {
-  padding: 60px 0;
-}
-
-#Project h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.card-deck {
-  display: flex;
-  justify-content: space-between;
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background-color: #fff;
+    border: none;
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-body {
-  padding: 15px;
+    background-color: #495057;
 }
 
-/* Contact Section Styles */
-#contact {
-  background-color: #5000ca;
-  padding: 60px 0;
+.card-title {
+    color: #f8f9fa;
 }
 
-#contact p {
-  font-size: 1.25rem;
+.card-text {
+    color: #ced4da;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #5000ca;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    padding: 1rem;
+    background-color: #212529;
+    text-align: center;
+    color: #adb5bd;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .typewriter h2 {
-    font-size: 1.5rem;
-  }
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
 
-  .typewriter p {
-    font-size: 1rem;
-  }
+footer a:hover {
+    text-decoration: underline;
+}
 
-  .card-img-top {
-    height: 150px;
-  }
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .typewriter h2 {
+        font-size: 2rem;
+    }
 
-  .card-deck {
-    flex-direction: column;
-  }
+    .typewriter p {
+        font-size: 1rem;
+    }
 }
